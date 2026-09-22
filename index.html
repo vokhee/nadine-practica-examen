@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Food Order</title>
+
+  <!-- Se conserva la misma estructura de la plantilla base -->
+  <link href="css/framework7.bundle.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+
+    <!-- Panel lateral -->
+    <section class="panel panel-left panel-cover">
+      <div class="panel-header">
+        <i class="material-icons">restaurant_menu</i>
+        <div>
+          <h3>Food Order</h3>
+          <p>Menú principal</p>
+        </div>
+      </div>
+
+      <div class="list links-list panel-links">
+        <ul>
+          <li>
+            <a href="#" class="panel-close menu-link" data-section="home">
+              <i class="material-icons">home</i>
+              <span>Inicio</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="panel-close menu-link" data-section="cart">
+              <i class="material-icons">shopping_bag</i>
+              <span>Carrito</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="panel-close menu-link" data-section="profile">
+              <i class="material-icons">account_circle</i>
+              <span>Perfil</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="view view-main view-init">
+
+      <section data-name="home" class="page">
+
+        <nav class="navbar food-navbar">
+          <div class="navbar-bg"></div>
+          <div class="navbar-inner">
+            <div class="left">
+              <a href="#" class="link panel-open" data-panel="left" aria-label="Abrir menú">
+                <i class="material-icons">menu</i>
+              </a>
+            </div>
+
+            <div class="title">Food Order</div>
+
+            <div class="right">
+              <a href="#" class="link profile-button" aria-label="Perfil">
+                <i class="material-icons">account_circle</i>
+              </a>
+            </div>
+          </div>
+        </nav>
+
+        <section class="page-content food-page-content">
+
+          <div class="content-wrap">
+            <h2 class="section-title">Popular Item</h2>
+
+            <div class="row product-row">
+
+              <div class="col-50">
+                <article class="product-card" data-product="Beef Burger" data-price="7.90">
+                  <div class="product-image-wrap">
+                    <img src="img/big-tasty.jpeg" alt="Beef Burger" class="product-image">
+                  </div>
+
+                  <div class="product-info">
+                    <h3>Big Tasty</h3>
+                    <p>Chedar Blanco</p>
+                  </div>
+
+                  <div class="product-footer">
+                    <strong>$7.90</strong>
+                    <a href="#" class="add-button" aria-label="Agregar Beef Burger al carrito">
+                      <i class="material-icons">add</i>
+                    </a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-50">
+                <article class="product-card" data-product="Big Mac" data-price="7.90">
+                  <div class="product-image-wrap">
+                    <img src="img/big-mac.png" alt="Big Mac" class="product-image">
+                  </div>
+
+                  <div class="product-info">
+                    <h3>Big Mac</h3>
+                    <p>Cheesy Mozzarella</p>
+                  </div>
+
+                  <div class="product-footer">
+                    <strong>$7.90</strong>
+                    <a href="#" class="add-button" aria-label="Agregar Big Mac al carrito">
+                      <i class="material-icons">add</i>
+                    </a>
+                  </div>
+                </article>
+              </div>
+
+            </div>
+          </div>
+
+          <a href="#" class="promo-banner" id="order-now" aria-label="Ordenar promoción de pizza">
+            <img src="img/pizza-banner.png" alt="Free Pizza, promoción 1 + 1 = 1, Order Now">
+          </a>
+
+        </section>
+      </section>
+
+      <div class="toolbar toolbar-bottom food-toolbar">
+        <div class="toolbar-inner">
+          <a href="#" class="link toolbar-link active-tab" data-section="home" aria-label="Inicio">
+            <i class="material-icons">home</i>
+          </a>
+
+          <a href="#" class="link toolbar-link cart-link" data-section="cart" aria-label="Carrito">
+            <span class="toolbar-icon-wrap">
+              <i class="material-icons">shopping_bag</i>
+            </span>
+          </a>
+
+          <a href="#" class="link toolbar-link" data-section="profile" aria-label="Perfil">
+            <i class="material-icons">account_circle</i>
+          </a>
+        </div>
+      </div>
+
+    </div><!-- /view -->
+  </div><!-- /app -->
+
+  <script src="js/framework7.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
